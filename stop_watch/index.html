@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop_watch</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      background:#f4f4f4;
+    }
+
+    .container{
+      background:white;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      text-align:center;
+      width:320px;
+    }
+
+    #time{
+      font-size:40px;
+      margin-bottom:20px;
+      letter-spacing:2px;
+    }
+
+    button{
+      padding:10px 18px;
+      margin:5px;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    .start{ background:#28a745; color:white; }
+    .pause{ background:#ffc107; }
+    .reset{ background:#dc3545; color:white; }
+    .lap{ background:#007bff; color:white; }
+
+    ul{
+      margin-top:20px;
+      padding:0;
+      list-style:none;
+      max-height:150px;
+      overflow-y:auto;
+      text-align:left;
+    }
+
+    li{
+      padding:6px;
+      border-bottom:1px solid #eee;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Stopwatch</h2>
+  <div id="time">00:00:00</div>
+
+  <button class="start" onclick="startTimer()">Start</button>
+  <button class="pause" onclick="pauseTimer()">Pause</button>
+  <button class="reset" onclick="resetTimer()">Reset</button>
+  <button class="lap" onclick="recordLap()">Lap</button>
+
+  <ul id="laps"></ul>
+</div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
